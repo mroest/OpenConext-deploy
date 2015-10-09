@@ -389,7 +389,7 @@ authzplayground:
   crt_name: "{{ tls_https.crt_name }}"
   key_name: "{{ tls_https.key_name }}"
 
-pdp_version: "0.1-SNAPSHOT"
+pdp_version: "0.1"
 pdp_snapshot_timestamp: "20150909.122119-4"
 pdp_debug: true
 pdp:
@@ -498,7 +498,7 @@ loadbalancing:
     ]
   }
   pdp: {
-      port: 607,
+      port: 610,
       heartbeat: { url: "/health", method: "GET" },
       servers: [
         { label: "pdp_backend", ip: "192.168.66.79" },
